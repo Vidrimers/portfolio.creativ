@@ -1,0 +1,147 @@
+@media (max-width: 1170px) {
+  .team__items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .team__item:hover {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .table__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+
+  .table__item {
+    margin: auto;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .table__item:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .team {
+    margin-bottom: 5rem;
+  }
+
+  .team__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team--name {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    position: relative;
+    /* opacity: 1; */
+    /* width: 100%; */
+  }
+
+  .footer__items {
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .team__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    background: transparent;
+    margin-bottom: 2rem;
+  }
+
+  .menu__list-link--active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .menu__list-link:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .table {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__logo {
+    position: relative;
+    top: 0;
+    left: 30%;
+    width: 40%;
+  }
+
+  .menu__list {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 3rem;
+  }
+
+
+  .menu__item {
+}
+  .menu__list-link {
+    padding: 1.5rem 3rem;
+    
+  }
+
+  .menu__list-link:hover {
+    background: transparent;
+    color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .menu__list-link--active:hover {
+    background: #fff;
+    color: #da2525;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .menu__item {
+    margin: 0 auto;
+  }
+
+  .menu__item+.menu__item {
+    margin-left: 0;
+  }
+
+  .team__items {
+    grid-template-columns: 1fr;
+  }
+
+  .team__item--name {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+}
